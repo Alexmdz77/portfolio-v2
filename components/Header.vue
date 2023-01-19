@@ -1,5 +1,5 @@
 <template>
-    <div class="col-2">
+    <div class="col-2" id="home">
         <div>
             <h1>Making the Complex Simple.</h1>
             <p>My name is Alexandre and I am a fullstack web developer in an apprenticeship program, combining hands-on experience with classroom learning.</p>

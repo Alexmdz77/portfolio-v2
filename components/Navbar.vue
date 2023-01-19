@@ -5,9 +5,9 @@
                 <a href="#"><img src="@/assets/img/logo.svg" alt="Logo"></a>
             </div>
             <div class="nav__links">
-                <a v-for="link in links" :key="link.name" :href="link.url">{{ link.name }}</a>
+                <nuxt-link @click="scrollTo(link.url)" v-for="link in links" :key="link.name">{{ link.name }}</nuxt-link>
             </div>
-            <a class="btn-primary btn-border" href="#contact">Contact me</a>
+            <a class="btn-primary btn-border" @click="scrollTo('#contact')">Contact me</a>
         </div>
     </div>
 </template>
@@ -17,12 +17,27 @@
         data() {
             return {
                 links: [
-                    { name: 'Home', url: '#' },
+                    { name: 'Home', url: '#home' },
                     { name: 'About', url: '#about' },
                     { name: 'Projects', url: '#projects' }
                 ],
             }
+        },
+
+        methods: {
+            scrollTo(url) {
+                const element = document.querySelector(url);
+
+                const offset = 256;
+                const bodyRect = document.body.getBoundingClientRect().top;
+                const elementRect = element.getBoundingClientRect().top;
+                const elementPosition = elementRect - bodyRect;
+                const offsetPosition = elementPosition - offset;
+
+                window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
+            }
         }
+
     }
 </script>
 <style lang="scss">
