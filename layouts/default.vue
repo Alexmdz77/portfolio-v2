@@ -3,6 +3,7 @@
     <div id="content">
       <slot/>
     </div>
+    <Footer />
 </template>
 
 <script>
