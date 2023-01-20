@@ -43,6 +43,9 @@ p {
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
+    
+    user-select: none;
+    cursor: pointer;
 
     &:hover {
         background-color: $primary-color-hover;

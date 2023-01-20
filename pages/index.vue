@@ -3,6 +3,7 @@
         <Header />
         <Intro />
         <Projects />
+        <Technology />
     </div>
   
 </template>

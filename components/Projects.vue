@@ -187,7 +187,8 @@
                 border: 1.5px solid #32363A;
                 backdrop-filter: blur(1.5px);
                 border-radius: 8px;
-
+                
+                user-select: none;
                 cursor: pointer;
 
                 &:hover {
@@ -240,7 +241,7 @@
                 background: #212427;
                 border-radius: 8px;
                 width: 400px;
-                transition: box-shadow 0.3s ease-in-out;
+                transition: box-shadow 0.2s ease-in-out;
 
                 &:hover {
                     box-shadow: 0px 2px 24px rgba(255, 255, 255, 0.08);

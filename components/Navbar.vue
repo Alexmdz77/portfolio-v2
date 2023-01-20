@@ -18,7 +18,7 @@
             return {
                 links: [
                     { name: 'Home', url: '#home', offset: 256 },
-                    { name: 'About', url: '#about', offset: 200 },
+                    { name: 'About', url: '#about', offset: 120 },
                     { name: 'Projects', url: '#projects', offset: 120 }
                 ],
             }
