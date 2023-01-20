@@ -13,14 +13,6 @@
 export default {
     name: 'Index',
     layout: 'default',
-    async asyncData ({ req, res }) {
-        if (process.server) {
-            return { host: process.req.headers.host }
-        } else {
-            return { host: window.location.host }
-        }
-    }
-
 }
 </script>
 
