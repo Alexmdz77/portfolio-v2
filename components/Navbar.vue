@@ -27,6 +27,7 @@
         methods: {
             scrollTo(link) {
                 const element = document.querySelector(link.url);
+                if (!element) return;
 
                 const offset = link.offset;
                 const bodyRect = document.body.getBoundingClientRect().top;

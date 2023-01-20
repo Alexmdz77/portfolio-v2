@@ -22,12 +22,12 @@ export default defineNuxtConfig({
           lang: 'en'
         },
         link: [
-            { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-            { rel: 'preload', href: '~/assets/fonts/Sora-Light.ttf' },
-            { rel: 'preload', href: '~/assets/fonts/Sora-Regular.ttf' },
-            { rel: 'preload', href: '~/assets/fonts/Sora-Medium.ttf' },
-            { rel: 'preload', href: '~/assets/fonts/Sora-SemiBold.ttf' },
-            { rel: 'preload', href: '~/assets/fonts/Sora-Bold.ttf' },
+            { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico', as: 'image' },
+            { rel: 'preload', href: '~/assets/fonts/Sora-Light.ttf', as: 'font', type: 'font/ttf', crossorigin: 'anonymous' },
+            { rel: 'preload', href: '~/assets/fonts/Sora-Regular.ttf', as: 'font', type: 'font/ttf', crossorigin: 'anonymous' },
+            { rel: 'preload', href: '~/assets/fonts/Sora-Medium.ttf', as: 'font', type: 'font/ttf', crossorigin: 'anonymous' },
+            { rel: 'preload', href: '~/assets/fonts/Sora-SemiBold.ttf', as: 'font', type: 'font/ttf', crossorigin: 'anonymous' },
+            { rel: 'preload', href: '~/assets/fonts/Sora-Bold.ttf', as: 'font', type: 'font/ttf', crossorigin: 'anonymous' },
         ]
       }
     }
