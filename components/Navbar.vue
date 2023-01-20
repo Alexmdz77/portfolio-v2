@@ -5,7 +5,7 @@
                 <a href="#"><img src="@/assets/img/logo.svg" alt="Logo"></a>
             </div>
             <div class="nav__links">
-                <nuxt-link @click="scrollTo(link.url)" v-for="link in links" :key="link.name">{{ link.name }}</nuxt-link>
+                <nuxt-link @click="scrollTo(link)" v-for="link in links" :key="link.name">{{ link.name }}</nuxt-link>
             </div>
             <a class="btn-primary btn-border" @click="scrollTo('#contact')">Contact me</a>
         </div>
@@ -17,18 +17,18 @@
         data() {
             return {
                 links: [
-                    { name: 'Home', url: '#home' },
-                    { name: 'About', url: '#about' },
-                    { name: 'Projects', url: '#projects' }
+                    { name: 'Home', url: '#home', offset: 256 },
+                    { name: 'About', url: '#about', offset: 200 },
+                    { name: 'Projects', url: '#projects', offset: 120 }
                 ],
             }
         },
 
         methods: {
-            scrollTo(url) {
-                const element = document.querySelector(url);
+            scrollTo(link) {
+                const element = document.querySelector(link.url);
 
-                const offset = 256;
+                const offset = link.offset;
                 const bodyRect = document.body.getBoundingClientRect().top;
                 const elementRect = element.getBoundingClientRect().top;
                 const elementPosition = elementRect - bodyRect;
@@ -40,9 +40,10 @@
 
     }
 </script>
-<style lang="scss">
+<style lang="scss" scoped>
     #nav__wrapper {
         position: fixed;
+        z-index: 1000;
         top: 48px;
         left: 0;
 
@@ -60,7 +61,6 @@
         padding: 6.5px 8px;
         max-width: 1250px;
         margin: 0 auto;
-        z-index: 100;
 
         background: rgba(24, 25, 27, 0.6);
         backdrop-filter: blur(3px);
