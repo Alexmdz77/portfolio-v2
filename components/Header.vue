@@ -16,7 +16,7 @@
         name: 'Header',
     }
 </script>
-<style lang="scss">
+<style lang="scss" scoped>
 
 .col-2 {
     display: grid;
@@ -35,9 +35,10 @@
 
     img {
         display: block;
-        width: 80%;
         height: auto;
         margin-left: auto;
+
+        width: 430px;
     }
 }
     

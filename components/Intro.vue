@@ -6,7 +6,7 @@
         </div>
         <div class="col-2">
             <div>
-                <img src="@/assets/img/intro.svg" alt="rocket"/>
+                <img src="@/assets/img/intro.svg" alt="intro"/>
             </div>
             <div class="card">
                 <div class="element">
@@ -69,6 +69,9 @@
             width: 80%;
             height: auto;
             margin-left: auto;
+
+            width: 430px;
+            height: 430px;
         }
     }
 

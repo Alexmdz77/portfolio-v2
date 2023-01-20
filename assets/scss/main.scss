@@ -11,6 +11,17 @@ body {
     font-family: 'Sora';
     font-style: normal;
 }
+
+#__nuxt {
+    display: flex;
+    flex-direction: column;
+    background: #18191B;
+
+    width: 100%;
+    min-height: 100vh;
+    padding: 0 48px;
+}
+
 a {
     cursor: pointer;
     text-decoration: none;

@@ -66,6 +66,14 @@
         backdrop-filter: blur(3px);
         border-radius: 8px;
 
+        .nav__logo {
+            a {
+                img {
+                    width: 66px;
+                }
+            }
+        }
+
         .nav__links {
             display: flex;
             align-items: center;
