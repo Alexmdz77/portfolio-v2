@@ -1,6 +1,6 @@
 <template>
     <div id="footer">
-        <p>Made with ❤️ by Alexmdz77 & Itsme.to️ </p>
+        <p>Made with ❤️ by <a href="https://github.com/Alexmdz77/" target="_blank">Alexmdz77</a> & <a href="https://itsme.to/" target="_blank">Itsme.to️</a></p>
         <p>Alexmdz77 · 2023</p>
     </div>
 </template>
@@ -11,7 +11,7 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss" scoped>
 
     #footer {
         display: flex;
@@ -29,11 +29,24 @@ export default {
 
         max-width: 1250px;
         margin: 0 auto;
+
+        p {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+            color: $white;
+
+            a {
+                color: $white;
+                text-decoration: none;
+                transition: color 0.2s ease-in-out;
+
+                &:hover {
+                    color: $primary-color;
+                }
+            }
+        }
     }
     
-    p {
-        font-size: 14px;
-        color: #fff;
-    }
 
 </style>
