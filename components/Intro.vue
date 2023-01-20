@@ -26,7 +26,7 @@
         name: 'Intro',
     }
 </script>
-<style lang="scss">
+<style lang="scss" scoped>
 
 #about {
     display: flex;
