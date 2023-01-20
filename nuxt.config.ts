@@ -1,6 +1,16 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
     ssr: true,
+    modules: [
+        ['@nuxtjs/google-fonts',],
+    ],
+    googleFonts: {
+        families: {
+            'Sora': [400, 500, 600, 700, 800, 900],
+        },
+        download: true,
+        preload: true,
+    },
     vite: {
         css: {
             preprocessorOptions: {
@@ -21,14 +31,6 @@ export default defineNuxtConfig({
         htmlAttrs: {
           lang: 'en'
         },
-        link: [
-            { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico', as: 'image' },
-            { rel: 'preload', href: '~/assets/fonts/Sora-Light.ttf', as: 'font', type: 'font/ttf', crossorigin: 'anonymous' },
-            { rel: 'preload', href: '~/assets/fonts/Sora-Regular.ttf', as: 'font', type: 'font/ttf', crossorigin: 'anonymous' },
-            { rel: 'preload', href: '~/assets/fonts/Sora-Medium.ttf', as: 'font', type: 'font/ttf', crossorigin: 'anonymous' },
-            { rel: 'preload', href: '~/assets/fonts/Sora-SemiBold.ttf', as: 'font', type: 'font/ttf', crossorigin: 'anonymous' },
-            { rel: 'preload', href: '~/assets/fonts/Sora-Bold.ttf', as: 'font', type: 'font/ttf', crossorigin: 'anonymous' },
-        ]
       }
     }
 })
