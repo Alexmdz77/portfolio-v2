@@ -3,13 +3,18 @@ export default defineNuxtConfig({
     ssr: true,
     modules: [
         ['@nuxtjs/google-fonts',],
+        ['@nuxtjs/axios',],
         ['nuxt-mail', {
             message: {
-                to: 'alexandretrv@gmail.com',
+                to: process.env.CONTACTEMAIL,
             },
             smtp: {
-                host: 'smtp.gmail.com',
-                port: 465,
+                host: process.env.MAILHOST,
+                port: process.env.MAILPORT,
+                auth: {
+                    user: process.env.MAILUSER,
+                    pass: process.env.MAILPASS,
+                },
             },
         }],
     ],
