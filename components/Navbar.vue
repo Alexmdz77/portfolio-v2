@@ -7,7 +7,7 @@
             <div class="nav__links">
                 <nuxt-link @click="scrollTo(link)" v-for="link in links" :key="link.name">{{ link.name }}</nuxt-link>
             </div>
-            <a class="btn-primary btn-border" @click="scrollTo('#contact')">Contact me</a>
+            <a class="btn-primary btn-border" @click="scrollTo(contact)">Contact me</a>
         </div>
     </div>
 </template>
@@ -21,6 +21,11 @@
                     { name: 'About', url: '#about', offset: 120 },
                     { name: 'Projects', url: '#projects', offset: 120 }
                 ],
+                contact : {
+                    name: 'Contact',
+                    url: '#contact',
+                    offset: 120
+                }
             }
         },
 

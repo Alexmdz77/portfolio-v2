@@ -3,6 +3,15 @@ export default defineNuxtConfig({
     ssr: true,
     modules: [
         ['@nuxtjs/google-fonts',],
+        ['nuxt-mail', {
+            message: {
+                to: 'alexandretrv@gmail.com',
+            },
+            smtp: {
+                host: 'smtp.gmail.com',
+                port: 465,
+            },
+        }],
     ],
     googleFonts: {
         families: {

@@ -4,6 +4,7 @@
         <Intro />
         <Projects />
         <Technology />
+        <Contact />
     </div>
   
 </template>
