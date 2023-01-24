@@ -3,7 +3,6 @@ export default defineNuxtConfig({
     ssr: true,
     modules: [
         ['@nuxtjs/google-fonts',],
-        ['@nuxtjs/axios',],
         ['nuxt-mail', {
             message: {
                 to: process.env.CONTACTEMAIL,
