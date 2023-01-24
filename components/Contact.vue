@@ -185,5 +185,16 @@ export default {
             padding: 0 4px;
         }
     }
+
+    .links {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+
+        img {
+            width: 40px;
+            height: 40px;
+        }
+    }
 }
 </style>
