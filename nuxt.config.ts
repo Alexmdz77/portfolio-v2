@@ -5,8 +5,9 @@ export default defineNuxtConfig({
         ['@nuxtjs/google-fonts',],
         ['nuxt-mail', {
             message: {
-                to: process.env.CONTACTEMAIL,
+                to: 'alexandretrv@gmail.com',
             },
+            service: 'gmail',
             smtp: {
                 host: process.env.MAILHOST,
                 port: process.env.MAILPORT,
@@ -32,6 +33,7 @@ export default defineNuxtConfig({
                 },
             },
         },
+        envDir: '.env',
     },
     app: {
       head: {
@@ -45,5 +47,5 @@ export default defineNuxtConfig({
           lang: 'en'
         },
       }
-    }
+    },
 })
