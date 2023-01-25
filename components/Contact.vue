@@ -55,14 +55,18 @@ export default {
 
     methods: {
         sendEmail() {
-            console.log(this.form)
-
             this.$mail.send({
                 to: '',
                 from: this.form.email,
                 subject: 'Contact form from ' + this.form.firstname + ' ' + this.form.lastname,
                 text: this.form.message,
             }).then(() => {
+                this.form = {
+                    firstname: '',
+                    lastname: '',
+                    email: '',
+                    message: ''
+                }
                 console.log('Email sent')
             })
         }
