@@ -9,34 +9,64 @@
                 <div class="element">
                     <img src="@/assets/img/icons/html.svg" alt="icon-html" class="icon">
                     <h3>HTML</h3>
-                    <p class="text">Markup language used to format the content of a Web page.</p>
+                    <p class="text">Markup language used to create the structure and layout of web pages.</p>
                 </div>
                 <div class="element">
                     <img src="@/assets/img/icons/css.svg" alt="icon-css" class="icon">
                     <h3>CSS</h3>
-                    <p class="text">Language of style sheets allowing the formatting of the contents of a Web page.</p>
+                    <p class="text">Stylesheet language used to describe the presentation of a document written in HTML.</p>
                 </div>
                 <div class="element">
-                    <img src="@/assets/img/icons/css.svg" alt="icon-members" class="icon">
-                    <h3>CSS</h3>
-                    <p class="text">Language of style sheets allowing the formatting of the contents of a Web page.</p>
+                    <img src="@/assets/img/icons/js.svg" alt="icon-js" class="icon">
+                    <h3>JavaScript</h3>
+                    <p class="text">Programming language used to create interactive and dynamic websites.</p>
+                </div>
+                <div class="element">
+                    <img src="@/assets/img/icons/nuxt.svg" alt="icon-nuxt" class="icon">
+                    <h3>Nuxt.js</h3>
+                    <p class="text">Framework built on top of Vue.js that simplifies the development of universal Vue.js applications.</p>
+                </div>
+                <div class="element">
+                    <img src="@/assets/img/icons/vue.svg" alt="icon-vue" class="icon">
+                    <h3>Vue.js</h3>
+                    <p class="text">Open-source JavaScript framework for building user interfaces.</p>
+                </div>
+                <div class="element">
+                    <img src="@/assets/img/icons/vuetify.svg" alt="icon-vuetify" class="icon">
+                    <h3>Vuetify</h3>
+                    <p class="text">Material Design framework for Vue.js that provides a set of reusable UI components.</p>
                 </div>
             </div>
             <div>
                 <div class="element">
-                    <img src="@/assets/img/icons/css.svg" alt="icon-members" class="icon">
-                    <h3>CSS</h3>
-                    <p class="text">Language of style sheets allowing the formatting of the contents of a Web page.</p>
+                    <img src="@/assets/img/icons/git.svg" alt="icon-git" class="icon">
+                    <h3>Git</h3>
+                    <p class="text">Version control system that allows developers to keep track of changes made to their code, collaborate with others, and easily roll back to previous versions.</p>
                 </div>
                 <div class="element">
-                    <img src="@/assets/img/icons/css.svg" alt="icon-members" class="icon">
-                    <h3>CSS</h3>
-                    <p class="text">Language of style sheets allowing the formatting of the contents of a Web page.</p>
+                    <img src="@/assets/img/icons/php.svg" alt="icon-php" class="icon">
+                    <h3>PHP</h3>
+                    <p class="text">Server-side scripting language used to create dynamic web pages.</p>
                 </div>
                 <div class="element">
-                    <img src="@/assets/img/icons/css.svg" alt="icon-members" class="icon">
-                    <h3>CSS</h3>
-                    <p class="text">Language of style sheets allowing the formatting of the contents of a Web page.</p>
+                    <img src="@/assets/img/icons/laravel.svg" alt="icon-laravel" class="icon">
+                    <h3>Laravel</h3>
+                    <p class="text">PHP web application framework designed to make the process of building web applications more efficient.</p>
+                </div>
+                <div class="element">
+                    <img src="@/assets/img/icons/mysql.svg" alt="icon-mysql" class="icon">
+                    <h3>MySQL</h3>
+                    <p class="text">Relational database management system used to store and retrieve data.</p>
+                </div>
+                <div class="element">
+                    <img src="@/assets/img/icons/node.svg" alt="icon-node" class="icon">
+                    <h3>Node.js</h3>
+                    <p class="text">JavaScript runtime built on Chrome's V8 JavaScript engine that allows developers to run JavaScript on the server side.</p>
+                </div>
+                <div class="element">
+                    <img src="@/assets/img/icons/mongo.svg" alt="icon-mongo" class="icon">
+                    <h3>MongoDB</h3>
+                    <p class="text">NoSQL, document-oriented database that allows for easy and flexible data modeling.</p>
                 </div>
             </div>
         </div>
