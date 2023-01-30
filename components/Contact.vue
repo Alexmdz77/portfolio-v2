@@ -55,6 +55,7 @@ export default {
 
     methods: {
         sendEmail() {
+            if(this.form.firstname === '' || this.form.lastname === '' || this.form.email === '' || this.form.message === '') return console.log('Please fill all the fields');
             this.$mail.send({
                 to: '',
                 from: this.form.email,
