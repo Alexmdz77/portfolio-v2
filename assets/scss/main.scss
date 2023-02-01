@@ -44,6 +44,11 @@ p {
     margin: 0;
 }
 
+img {
+    -webkit-user-drag: none;
+    user-select: none;
+}
+
 .btn-primary {
     background-color: $primary-color;
     color: $white;
