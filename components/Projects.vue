@@ -278,6 +278,7 @@
                     > .tags {
                         display: flex;
                         flex-direction: row;
+                        flex-wrap: wrap;
                         align-items: center;
                         justify-content: left;
                         gap: 10px;
