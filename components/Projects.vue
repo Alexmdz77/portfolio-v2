@@ -230,12 +230,11 @@
             .card {
                 display: flex;
                 flex-direction: column;
-                width: 100%;
                 border: 1.5px solid #32363A;
                 background: #212427;
                 border-radius: 8px;
-                width: 400px;
                 transition: box-shadow 0.2s ease-in-out;
+                height: auto;
 
                 &:hover {
                     box-shadow: 0px 2px 24px rgba(255, 255, 255, 0.08);
