@@ -9,9 +9,9 @@
                 <p>Thank you for considering me for your project.I look forward to the opportunity to work with you and further develop my skills.</p>
                 <p class="mail">alexandretrv@gmail.com</p>
                 <div class="links">
-                    <a href=""><img src="@/assets/img/github.svg" alt="github"/></a>
-                    <a href=""><img src="@/assets/img/linkedin.svg" alt="linkedin"/></a>
-                    <a href=""><img src="@/assets/img/twitter.svg" alt="twitter"/></a>
+                    <a href="https://github.com/Alexmdz77"><img src="@/assets/img/github.svg" alt="github"/></a>
+                    <a href="https://www.linkedin.com/in/alexandre-trouve/"><img src="@/assets/img/linkedin.svg" alt="linkedin"/></a>
+                    <a href="https://twitter.com/Alexmdz77"><img src="@/assets/img/twitter.svg" alt="twitter"/></a>
                 </div>
             </div>
             <div class="form">
