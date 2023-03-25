@@ -230,6 +230,7 @@
                 height: 100%;
                 background: linear-gradient(-90deg, rgba(24, 25, 27, 0) 5%, #18191b 99%);
                 z-index: 10;
+                pointer-events: none;
             }
 
             &::after {
@@ -242,6 +243,7 @@
                 height: 100%;
                 background: linear-gradient(90deg, rgba(24, 25, 27, 0) 5%, #18191b 99%);
                 z-index: 10;
+                pointer-events: none;
             }
 
 
