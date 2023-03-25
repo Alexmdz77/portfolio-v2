@@ -18,6 +18,8 @@ body {
     width: 100%;
     min-height: 100vh;
     padding: 0 48px;
+
+    overflow-x: clip;
 }
 
 a {
