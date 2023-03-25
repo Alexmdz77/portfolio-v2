@@ -13,7 +13,7 @@
                 :modules="modules"
                 :slidesPerView="isMobile ? 1.3 : 3.5"
                 :spaceBetween="30"
-                :freeMode="true"
+                :freeMode="isMobile ? false : true"
                 :slidesOffsetBefore="50"
             >
                 <swiper-slide class="card" v-for="(project, index) in filteredProjects" :key="index">
