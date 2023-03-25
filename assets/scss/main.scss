@@ -69,7 +69,7 @@ img {
     }
 }
 .desktop {
-    @include breakpoint(mobile) {
+    @include breakpoint(tablet) {
         display: none !important;
     }
 }
