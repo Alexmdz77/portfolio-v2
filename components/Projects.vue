@@ -11,7 +11,7 @@
             <swiper 
                 class="cards"
                 :modules="modules"
-                :slidesPerView="3.5"
+                :slidesPerView="isMobile ? 1.3 : 3.5"
                 :spaceBetween="30"
                 :freeMode="true"
                 :slidesOffsetBefore="50"
@@ -110,6 +110,13 @@
                 return this.projects.filter(project => {
                     return project.tags.some(tag => this.activeTags.includes(tag))
                 })
+            },
+            isMobile() {
+                if(process.client) {
+                    return window.innerWidth < 768
+                } else {
+                    return false
+                }
             }
         },
         methods: {
@@ -164,6 +171,10 @@
             align-items: center;
             justify-content: center;
             gap: 20px;
+            
+            @include breakpoint(mobile) {
+                display: none !important;
+            }
 
             > .tag {
                 display: flex;
@@ -201,6 +212,13 @@
         .cards {
             width: calc(100% + 100px);
             left: -50px;
+            cursor: grab;
+
+
+            @include breakpoint(mobile) {
+            width: calc(100% + 100px);
+                left: -50px;
+            }
 
 
             &::before {
@@ -330,7 +348,7 @@
 
                     p {
                         font-weight: 400;
-                        font-size: 15px;
+                        font-size: 14px;
                         line-height: 19px;
                         color: #FFFFFF;
                     }

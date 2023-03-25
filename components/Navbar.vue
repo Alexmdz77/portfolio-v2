@@ -1,6 +1,6 @@
 <template>
     <div id="nav__wrapper">
-        <div id="nav">
+        <div class="nav desktop">
             <div class="nav__logo">
                 <a href="#"><img src="@/assets/img/logo.svg" alt="Logo"></a>
             </div>
@@ -8,6 +8,11 @@
                 <nuxt-link @click="scrollTo(link)" v-for="link in links" :key="link.name">{{ link.name }}</nuxt-link>
             </div>
             <a class="btn-primary btn-border" @click="scrollTo(contact)">Contact me</a>
+        </div>
+        <div class="nav mobile">
+            <div class="nav__logo">
+                <a href="#"><img src="@/assets/img/logo.svg" alt="Logo"></a>
+            </div>
         </div>
     </div>
 </template>
@@ -47,6 +52,7 @@
     }
 </script>
 <style lang="scss" scoped>
+
     #nav__wrapper {
         position: fixed;
         z-index: 1000;
@@ -57,7 +63,7 @@
         padding: 0 48px;
     }
 
-    #nav {
+    .nav {
         display: flex;
         justify-content: space-between;
         align-items: center;

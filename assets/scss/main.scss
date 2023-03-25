@@ -8,8 +8,6 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Sora';
-    font-style: normal;
 }
 
 #__nuxt {
@@ -26,22 +24,6 @@ a {
     cursor: pointer;
     text-decoration: none;
     color: #000;
-}
-
-h1 {
-    font-weight: 800;
-    font-size: 48px;
-    line-height: 60px;
-    color: $white;
-    margin: 0;
-}
-
-p {
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 25px;
-    color: $white;
-    margin: 0;
 }
 
 img {
@@ -80,3 +62,16 @@ img {
     align-items: center;
     text-align: center;
 }
+
+.mobile {
+    @include breakpoint(desktop) {
+        display: none !important;
+    }
+}
+.desktop {
+    @include breakpoint(mobile) {
+        display: none !important;
+    }
+}
+
+@import '_fonts';

@@ -30,6 +30,12 @@ export default {
         max-width: 1250px;
         margin: 0 auto;
 
+        
+        @include breakpoint(mobile) {
+            max-width: 100%;
+            padding: 16px 24px;
+        }
+
         p {
             font-weight: 400;
             font-size: 16px;

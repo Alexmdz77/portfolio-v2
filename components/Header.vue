@@ -19,11 +19,14 @@
 <style lang="scss" scoped>
 
 .col-2 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 2rem;
+    display: flex;
+    gap: 2rem;
     align-items: center;
     margin: 0 auto;
+
+    @include breakpoint(mobile) {
+        flex-direction: column-reverse;
+    }
     
     > div {
         display: flex;
@@ -39,6 +42,12 @@
         margin-left: auto;
 
         width: 430px;
+
+        @include breakpoint(mobile) {
+            margin: auto;
+            width: 80%;
+        }
+
     }
 }
     

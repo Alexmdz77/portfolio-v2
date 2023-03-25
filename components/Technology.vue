@@ -106,6 +106,11 @@
         grid-gap: 10rem;
         align-items: center;
         margin: 0 auto;
+
+        @include breakpoint(mobile) {
+            grid-template-columns: 1fr;
+            gap: 37px;
+        }
         
         > div {
             display: flex;
@@ -141,7 +146,7 @@
         .text {
             grid-area: text;
             font-weight: 400;
-            font-size: 15px;
+            font-size: 14px;
             line-height: 19px;
             color: $white;
         }

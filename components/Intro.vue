@@ -50,11 +50,15 @@
 
     
     .col-2 {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 10rem;
+        display: flex;
+        gap: 10rem;
         align-items: center;
         margin: 0 auto;
+
+        @include breakpoint(mobile) {
+            flex-direction: column-reverse;
+            gap: unset;
+        }
         
         > div {
             display: flex;
@@ -62,17 +66,22 @@
             align-items: flex-start;
 
             gap: 37px;
+            
+            > img {
+                display: block;
+                width: 80%;
+                height: auto;
+                margin-left: auto;
+
+                width: 430px;
+                height: 430px;
+
+                @include breakpoint(mobile) {
+                    display: none;
+                }
+            }
         }
 
-        img {
-            display: block;
-            width: 80%;
-            height: auto;
-            margin-left: auto;
-
-            width: 430px;
-            height: 430px;
-        }
     }
 
     .card {
@@ -88,9 +97,18 @@
         border: 1.5px solid #32363A;
         border-radius: 8px;
 
+        @include breakpoint(mobile) {
+            padding: 24px;
+            gap: 24px !important;
+        }
+
         .element {
             display: flex;
             gap: 37px;
+
+            @include breakpoint(mobile) {
+                gap: 20px !important;
+            }
 
             .icon {
                 width: 41px;

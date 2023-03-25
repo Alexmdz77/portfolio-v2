@@ -17,7 +17,7 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
 
     #index {
         display: flex;
@@ -28,6 +28,10 @@ export default {
         width: 100%;
 
         gap: 250px;
+
+        @include breakpoint(mobile) {
+            gap: 150px !important;
+        }
     }
     
 
