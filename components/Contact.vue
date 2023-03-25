@@ -99,12 +99,15 @@ export default {
     }
 
     .col-2 {
-        display: flex;
-        gap: 70px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 70px;
         align-items: flex-start;
         margin: 0 auto;
 
+        
         @include breakpoint(mobile) {
+            display: flex;
             flex-direction: column;
             gap: 40px;
         }
