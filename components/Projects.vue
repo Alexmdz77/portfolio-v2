@@ -60,6 +60,13 @@
                         img: 'portfolio.png',
                     },
                     { 
+                        name: 'ItsMyEmbed',
+                        tags: ['Node.js', 'TypeScript', 'SQLite'],
+                        description: 'Self-hosted Discord Bot for managing advanced messages through YAML files.',
+                        link: 'https://builtbybit.com/resources/itsmyembed.28488/',
+                        img: 'itsmyembed.png',
+                    },
+                    { 
                         name: 'CMS From Scratch',
                         tags: ['PHP', 'MySQL', 'HTML', 'SCSS'],
                         description: 'A CMS from scratch. A 3rd year ESGI school project with a team of 5 people.',
