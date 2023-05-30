@@ -6,7 +6,7 @@
         </div>
         <div class="col-2">
             <div>
-                <img src="@/assets/img/intro.svg" alt="intro"/>
+                <img src="@/assets/img/intro.webp" alt="intro"/>
             </div>
             <div class="card">
                 <div class="element">

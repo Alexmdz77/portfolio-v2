@@ -6,7 +6,7 @@
             <a class="btn-primary btn-border" href="#contact">Contact me</a>
         </div>
         <div>
-            <img src="@/assets/img/rocket.svg" alt="rocket"/>
+            <img src="@/assets/img/rocket.webp" alt="rocket"/>
         </div>
         
     </div>
