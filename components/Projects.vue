@@ -29,7 +29,7 @@
                         </div>
                         <div class="card-footer">
                             <!-- <img :src="imgPath2" alt=""> -->
-                            <!-- <img src="~/assets/img/projects/calypso.png" alt="project image"> -->
+                            <!-- <img src="~/assets/img/projects/calypso.webp" alt="project image"> -->
                         </div>
                 </swiper-slide>
             </swiper>
@@ -57,42 +57,42 @@
                         tags: ['Nuxt.js', 'Vue.js', 'SCSS'],
                         description: 'My personal portfolio website. Hosted on Netlify.',
                         link: 'https://github.com/Alexmdz77/portfolio-v2',
-                        img: 'portfolio.png',
+                        img: 'portfolio.webp',
                     },
                     { 
                         name: 'ItsMyEmbed',
                         tags: ['Node.js', 'TypeScript', 'SQLite'],
                         description: 'Self-hosted Discord Bot for managing advanced messages through YAML files.',
                         link: 'https://builtbybit.com/resources/itsmyembed.28488/',
-                        img: 'itsmyembed.png',
+                        img: 'itsmyembed.webp',
                     },
                     { 
                         name: 'CMS From Scratch',
                         tags: ['PHP', 'MySQL', 'HTML', 'SCSS'],
                         description: 'A CMS from scratch. A 3rd year ESGI school project with a team of 5 people.',
                         link: 'https://github.com/yungmides/CMSFromScratch',
-                        img: 'cmsfromscratch.png',
+                        img: 'cmsfromscratch.webp',
                     },
                     { 
                         name: 'Discord Bot Template',
                         tags: ['Node.js', 'TypeScript', 'MongoDB'],
                         description: 'A template for a Discord bot.',
                         link: 'https://github.com/Alexmdz77/DiscordBotTSV14',
-                        img: 'discordtemplate.png',
+                        img: 'discordtemplate.webp',
                     },
                     { 
                         name: 'Calypso v1',
                         tags: ['Node.js', 'JavaScript', 'SQLite'],
                         description: 'A public Discord bot that allow users to manage their own server and add some features to it (moderation, music, etc).',
                         link: 'https://github.com/CalypsoDiscordBot/calypso',
-                        img: 'calypso.png',
+                        img: 'calypso.webp',
                     },
                     { 
                         name: 'API REST Justify',
                         tags: ['Node.js', 'Express.js', 'SQLite'],
                         description: 'A REST API that allows you to justify a text. Hosted on Heroku.',
                         link: 'https://github.com/Alexmdz77/API-REST-justify',
-                        img: 'api-rest-justify.png',
+                        img: 'api-rest-justify.webp',
                     },
                 ],
             }
